@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    
+        <div style="border: 2px solid slateblue;">
+    <form>
+        <fieldset>
+            <legend>details</legend>
+        <label for="name">User Name:</label>
+
+        <tr><input type="text" placeholder="Enter the name"><br><br>
+        <label for="id">Password:</label>
+        <input type="text"placeholder="enter Id "><br><br>
+        <label for="class">Class:</label>
+       
+
+        <label for="rad">1</label>   <input type="radio" name="aa"><label for="rad">2</label>
+        <input type="radio" name="aa"> <label for="rad">1</label> <input type="radio" name="aa"><br><br>
+
+        <label for="Movies">Movies: </label>
+ 
+          <input type="radio" name="bb"><label for="rad">animal</label>
+        <input type="radio" name="bb"> <label for="rad">chitha</label> <input type="radio" name="bb"><label for="rad">salaar</label><br><br>
+        
+        <label for="Movies">Movies: </label>
+        <select name="select" id="movies">
+        <option value="movies">animal</option>
+        <option value="movies">chitha</option>
+        <option value="movies">salaar</option>
+    </select><br><br>
+
+    <label for="Movies">Movies: </label>
+    <select name="select" id="movies" size="6" multiple>
+    <option value="movies">animal</option>
+    <option value="movies">chitha</option>
+    <option value="movies">salaar</option>
+
+</select><br><br>
+    
+        <label for="gbox">Pre-book Snacks:</label>
+        <input type="radio" name="bb">
+        <label for="gbox">PoP corn</label>
+        <input type="radio" name="bb">
+        <label for="gbox">puffs</label>
+        <input type="radio" name="bb">
+        <label for="gbox">Ice cream</label><br><br>
+        <label for="movies-discri"></label>
+        <textarea name="movie" id="" cols="30" rows="10">salaar movie is good. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus perferendis laudantium quod possimus aspernatur excepturi maxime sed cupiditate fugiat similique rem dolor eos atque pariatur officia harum sapiente, id iure!</textarea>
+        <button type="button" onclick="alert('Submited')">Submit</button>
+        </fieldset>
+       
+        
+
+    </form>
+
+<script>
+    // document.write("Ranjith ")
+    // console.log("ranjith")
+  
+
+    // var a = parseInt(prompt("Enter a value:"));
+    // var b = paresInt(prompt("Enter b value:"));
+    // var sum = a+b;
+    // console.log(sum);
+
+    var color = prompt("Enter color");
+var result;
+
+color = color.toLowerCase();
+
+switch (color) {
+    case 'r':
+        result = 'red';
+        break;
+    case 'o':
+        result = 'orange'; 
+        break;
+    case 'y':
+        result = 'yellow'; 
+        break;
+    case 'g':
+        result = 'green';
+        break;
+    case 'b':
+        result = 'blue';
+        break;
+    case 'i':
+        result = 'indigo';
+        break;
+    case 'v':
+        result = 'violet';
+        break;
+    default:
+        result = 'invalid input';
+}
+
+document.write(result);
+document.write(" ");
+
+var kitkat = 75;
+
+document.write('sam = ', kitkat - ((75 / 2) / 2));
+document.write(' Angel = ', (75 / 2) / 2);
+
+var num = prompt("Enter number of lemons"); 
+
+if (num > 49)
+    document.write(' you have extra ', num - 49, ' lemons');
+else if (num < 49)
+    document.write(' you need ', 49 - num, ' lemons');
+else if(num==49)
+document.write('')
+
+
+
+</script>
+    
+</body>
+</html>

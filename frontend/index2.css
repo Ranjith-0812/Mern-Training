@@ -1,0 +1,42 @@
+.body {
+    
+    flex-direction: column-reverse;
+
+}
+
+.map {
+    width: 50vw;``
+    height: 50vh;
+}
+
+.flag {
+    width: 500vw;
+    height: 500vh;
+    padding: 10% 10% 10% 10%;
+}
+
+.flags {
+    border: px solid black;
+}
+
+.flag-parts {
+    width: 50vw;
+    height: 15vh;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+    background-image: url(image/download.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.green {
+    background-color: green;
+}

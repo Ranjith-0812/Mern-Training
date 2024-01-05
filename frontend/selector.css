@@ -1,0 +1,33 @@
+pre{
+    font-size: large;
+}
+h1::first-letter{
+    color: blue;
+    font-size: 40px;
+}
+pre::first-line{
+    color: yellowgreen;
+}
+::selection{
+    color: red;
+    background-color: blue;
+}
+::marker{
+    color:red;
+}
+h2::before {
+    content:normal;
+  }
+
+table,tr,th,td{
+    columns: red;
+    border: 1px solid black;
+
+  }
+  
+  #table th {
+    background-color: blue;
+  }
+  #table tr  {
+    background-color: green;
+  }
