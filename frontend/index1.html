@@ -24,6 +24,7 @@
     <button onclick="arraySum();">divide</button>
     <button onclick="obj.fun();">object</button>
     <button onclick="arrayprint();">staticArray</button>
+    <button onclick="oddeven();">OddorEven</button>
     <script>
 function printHeartPattern() {
     for (let row = 0; row < 6; row++) {
@@ -57,6 +58,23 @@ var s = JSON.stringify(obj);
 console.log(s);
 
 
+let student ={
+    name:'Harish',
+    rollno:1,
+    email:'ddd@gmail.com',
+    address:{
+        city:'CBE',
+        state:'tamilnadu',
+    }
+}
+
+var q = JSON.stringify(student);
+
+var w = JSON.(student);
+console.log( typeof q);
+console.log( typeof w);
+console.log(student.address['city']);
+
 
 
 
@@ -78,6 +96,26 @@ function arraySum(){
     for(var i=0;i<arr1.length;i++)
     console.log(arr1[i]);
  }
+
+// Promise------
+
+function oddeven(n){
+    var n = parseInt(prompt("Enter number:"));
+    return new Promise((resolve,reject)=>{
+       
+        if(n%2==0)
+            resolve();
+        else
+            reject();
+            
+        })
+    }
+    OddorEven(num).then((res)=>{
+        console.log("even");
+
+    }).catch(()=>{
+        console.log("Odd");
+    })
 
 
     </script>
