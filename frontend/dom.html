@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    
+</head>
+<body>
+    
+
+
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+<script>
+    function addRow() {
+        var name = prompt("Enter Name:");
+        var email = prompt("Enter Email:");
+
+        if (name && email) {
+            var table = document.getElementById("dataTable");
+            var row = table.insertRow(-1);
+
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+
+            cell1.textContent = name;
+            cell2.textContent = email;
+        } else {
+            alert("Please enter both name and email.");
+        }
+    }
+    
+    function change(this){
+        this.innerHtml = "Good";
+    }
+</script>
+<h1 onclick="change(this)"> CLICK!!!</h1>
+
+<button onclick="addRow()">Add Row</button>
+
+
+
+
+
+</body>
+</html>
